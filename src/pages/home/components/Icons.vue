@@ -2,7 +2,7 @@
    <div class="icons">
        <div
          class="icon"
-         v-for="item of iconList"
+         v-for="item of list"
           :key="item.id"
        >
            <div class="icon-img">
@@ -17,30 +17,8 @@
 
 export default {
   name: 'HomeIcons',
-  data () {
-    return {
-      iconList: [{
-        id: '001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: '002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-        desc: '名胜古迹'
-      }, {
-        id: '003',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/f5/a963333e1fa802.png',
-        desc: '本地玩乐'
-      }, {
-        id: '004',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',
-        desc: '亲子游'
-      }, {
-        id: '005',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png',
-        desc: '全部玩乐'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

@@ -4,7 +4,7 @@
       <ul>
           <li
             class="item border-bottom"
-            v-for="item of recommendList"
+            v-for="item of list"
             :key="item.id"
           >
               <div class="item-img-wrapper">
@@ -24,30 +24,8 @@
 
 export default {
   name: 'HomeRecomend',
-  data () {
-    return {
-      recommendList: [{
-        id: '001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/9a/9a44ea713b93140d90.water.jpg_200x200_dcf0f049.jpg',
-        title: '西溪国家湿地公园·周家村',
-        desc: '美若仙境，《非诚勿扰》取景地'
-      }, {
-        id: '002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/9a/9a44ea713b93140d90.water.jpg_200x200_dcf0f049.jpg',
-        title: '西溪国家湿地公园·周家村',
-        desc: '美若仙境，《非诚勿扰》取景地'
-      }, {
-        id: '003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/9a/9a44ea713b93140d90.water.jpg_200x200_dcf0f049.jpg',
-        title: '西溪国家湿地公园·周家村',
-        desc: '美若仙境，《非诚勿扰》取景地'
-      }, {
-        id: '004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/9a/9a44ea713b93140d90.water.jpg_200x200_dcf0f049.jpg',
-        title: '西溪国家湿地公园·周家村',
-        desc: '美若仙境，《非诚勿扰》取景地'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
