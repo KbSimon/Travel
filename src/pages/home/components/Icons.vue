@@ -50,6 +50,7 @@ export default {
   @import  '~styles/mixins.styl';
   .icons
     height: 0
+    margin-top .1rem
     padding-bottom 50%
     overflow hidden
     .icon
